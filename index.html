@@ -4,185 +4,124 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Badgertainment · Cozy game assets for indie developers</title>
-<meta name="description" content="Badgertainment makes cozy, colorful 2D and 3D game assets: icon packs, UI kits, sound effects, emote bubbles and isometric furniture for indie games.">
-<link rel="icon" href="img/favicon.png">
-<meta property="og:title" content="Badgertainment">
-<meta property="og:description" content="Cozy game assets for indie developers: icons, UI, SFX and more.">
-<meta property="og:image" content="img/hero.jpg">
-<style>
-@font-face{font-family:Fredoka;src:url(fonts/Fredoka.ttf);font-weight:300 700}
-@font-face{font-family:Nunito;src:url(fonts/Nunito.ttf);font-weight:200 1000}
-:root{--bg:#fff8ef;--ink:#3b2a20;--muted:#7a6656;--card:#fff;--accent:#f08a4b;--accent2:#6bb38a;--line:#f0e2d0}
-*{box-sizing:border-box}
-body{margin:0;font-family:Nunito,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-h1,h2,h3{font-family:Fredoka,Nunito,sans-serif;line-height:1.15;margin:0}
-a{color:var(--accent)}
-.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
-nav{position:sticky;top:0;z-index:5;background:rgba(255,248,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;gap:14px;height:64px}
-nav img{width:40px;height:40px;border-radius:50%}
-nav b{font-family:Fredoka;font-size:22px;font-weight:600}
-nav .links{margin-left:auto;display:flex;gap:22px}
-nav .links a{color:var(--ink);text-decoration:none;font-weight:700}
-.hero{position:relative;overflow:hidden}
-.hero .bgimg{position:absolute;inset:0;background:url(img/hero.jpg) center/cover;opacity:.35}
-.hero .wrap{position:relative;padding:90px 22px 80px;display:flex;gap:40px;align-items:center}
-.hero .logo{width:190px;height:190px;border-radius:50%;box-shadow:0 12px 40px rgba(120,70,30,.25);flex:none}
-.hero h1{font-size:clamp(38px,6vw,64px);font-weight:600}
-.hero p{font-size:20px;max-width:620px;color:#4e3b2e;margin:14px 0 26px}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;padding:13px 26px;border-radius:999px;box-shadow:0 6px 0 #c96a33}
-.btn.alt{background:#fff;color:var(--ink);box-shadow:0 6px 0 var(--line);margin-left:10px}
-.stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:-34px;position:relative}
-.stat{flex:1;min-width:160px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;text-align:center}
-.stat b{display:block;font-family:Fredoka;font-size:30px;color:var(--accent)}
-section{padding:70px 0 10px}
-section h2{font-size:38px;font-weight:600;margin-bottom:8px}
-.sub{color:var(--muted);margin:0 0 24px;font-size:18px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
-.filters button{font:inherit;font-weight:700;border:1px solid var(--line);background:#fff;color:var(--ink);padding:7px 16px;border-radius:999px;cursor:pointer}
-.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
-.card{background:var(--card);border-radius:20px;overflow:hidden;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(120,70,30,.15)}
-.card img{display:block;width:100%;height:auto;aspect-ratio:630/500;object-fit:cover}
-.card .body{padding:14px 18px 20px}
-.card h3{font-size:21px;font-weight:600;margin:6px 0 6px}
-.card p{margin:0;color:var(--muted);font-size:15px}
-.tag{display:inline-block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--accent2);background:#eaf6ef;padding:3px 10px;border-radius:999px}
-.card[data-cat=Free] .tag{color:#fff;background:var(--accent)}
-.about{display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:start}
-.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px}
-.box ul{padding-left:20px;margin:10px 0 0}
-.box li{margin:6px 0}
-.contact{text-align:center;background:#3b2a20;color:#fff;border-radius:28px;padding:56px 24px;margin:70px 0 0}
-.contact h2{color:#fff}
-.contact p{color:#e8d6c6;font-size:18px}
-.contact .btn{margin-top:10px;font-size:18px}
-footer{text-align:center;color:var(--muted);padding:34px 0 40px;font-size:14px}
-@media(max-width:760px){.hero .wrap{flex-direction:column;text-align:center;padding:50px 22px 70px}.hero .logo{width:130px;height:130px}.about{grid-template-columns:1fr}nav .links{display:none}.btn.alt{margin:12px 0 0}}
-</style>
+<meta name="description" content="Badgertainment makes cozy, colorful game assets: icon packs, UI kits, sound effects, emote bubbles, isometric furniture and retro horror props.">
+<link rel="canonical" href="https://badgertainment.github.io/">
+<link rel="icon" href="/img/favicon.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Badgertainment">
+<meta property="og:title" content="Badgertainment · Cozy game assets for indie developers">
+<meta property="og:description" content="Badgertainment makes cozy, colorful game assets: icon packs, UI kits, sound effects, emote bubbles, isometric furniture and retro horror props.">
+<meta property="og:image" content="https://badgertainment.github.io/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
 </head>
-<body>
-<nav><div class="wrap"><img src="img/logo.png" alt=""><b>Badgertainment</b>
-<div class="links"><a href="#packs">Asset packs</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
-
-<header class="hero"><div class="bgimg"></div><div class="wrap">
-<img class="logo" src="img/logo.png" alt="Badgertainment logo">
-<div><h1>Cozy game assets for indie developers</h1>
-<p>Icon packs, UI kits, sound effects, emote bubbles and isometric furniture, all in one soft and colorful style, so everything fits together in your game.</p>
-<a class="btn" href="#packs">See the packs</a><a class="btn alt" href="#contact">Get in touch</a></div>
+<body class="home">
+<header class="topbar"><div class="tb-in">
+<a class="brand" href="/"><img src="/img/logo.png" alt="" width="34" height="34"><span>Badgertainment</span></a>
+<nav><a href="/#packs">Asset packs</a><a href="/#about">About</a><a href="/#contact">Contact</a></nav>
 </div></header>
-
-<div class="wrap stats">
-<div class="stat"><b>19</b>asset packs</div>
-<div class="stat"><b>2,500+</b>game icons</div>
-<div class="stat"><b>212</b>sound effects</div>
-<div class="stat"><b>450</b>emote bubbles</div>
+<section class="hero"><div class="hero-in">
+<img class="logo" src="/img/logo.png" alt="Badgertainment logo" width="180" height="180">
+<div><p class="kicker">Indie game asset studio</p>
+<h1>Cozy game assets,<br>ready for your game</h1>
+<p class="lead">Icon packs, UI kits, sound effects, emote bubbles, isometric furniture and retro 3D props. One soft, consistent style, so every pack fits together.</p>
+<div class="cta"><a class="btn" href="#packs">Browse 19 packs</a><a class="btn ghost" href="#contact">Contact</a></div></div>
+</div></section>
+<div class="stats">
+<div><b>19</b><span>asset packs</span></div>
+<div><b>2,800+</b><span>game icons</span></div>
+<div><b>212</b><span>sound effects</span></div>
+<div><b>9,744</b><span>isometric sprites</span></div>
+<div><b>113</b><span>retro 3D props</span></div>
 </div>
-
-<section id="packs"><div class="wrap">
-<h2>Asset packs</h2>
-<p class="sub">Every pack ships as plain PNG, WAV/OGG or 3D files that work in any game engine.</p>
-<div class="filters"><button class="on" data-f="All">All</button><button class="" data-f="Icons">Icons</button><button class="" data-f="UI">UI</button><button class="" data-f="Audio">Audio</button><button class="" data-f="Characters">Characters</button><button class="" data-f="Environment">Environment</button><button class="" data-f="3D">3D</button><button class="" data-f="Free">Free</button></div>
+<main class="wrap">
+<section id="packs">
+<div class="sechead"><h2>Asset packs</h2><div class="filters"><button class="on" data-f="All">All</button><button class="" data-f="Icons">Icons</button><button class="" data-f="UI">UI</button><button class="" data-f="Audio">Audio</button><button class="" data-f="Characters">Characters</button><button class="" data-f="Environment">Environment</button><button class="" data-f="3D">3D</button><button class="" data-f="Free">Free</button></div></div>
 <div class="grid">
-      <article class="card" data-cat="Environment">
-        <img src="img/isofurniture.jpg" alt="Cozy Isometric Furniture preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Environment</span><h3>Cozy Isometric Furniture</h3><p>251 isometric furniture pieces for 14 rooms, walls and floors. 4 directions, 4 art styles, PNG + 3D models.</p></div>
-      </article>
-      <article class="card" data-cat="Characters">
-        <img src="img/emotes.jpg" alt="NPC Emote Bubbles preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Characters</span><h3>NPC Emote Bubbles</h3><p>450 animated emote bubbles for NPCs in 5 art styles: cozy, pixel, ink, flat and manga.</p></div>
-      </article>
-      <article class="card" data-cat="UI">
-        <img src="img/uikit.jpg" alt="Cozy UI Kit preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">UI</span><h3>Cozy UI Kit</h3><p>128 UI pieces: buttons with 4 states, panels, frames, bars, toggles and 50 UI icons. 9-slice ready.</p></div>
-      </article>
-      <article class="card" data-cat="Audio">
-        <img src="img/sfx.jpg" alt="Cozy Game SFX preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Audio</span><h3>Cozy Game SFX</h3><p>212 soft sound effects in 10 folders: UI, items, farming, animals, footsteps, magic, ambience loops and jingles. WAV + OGG.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/cooking.jpg" alt="Cooking States Icons preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Cooking States Icons</h3><p>30 ingredients in 4 states each: raw, chopped, cooked and burnt. Made for cooking and restaurant games.</p></div>
-      </article>
-      <article class="card" data-cat="3D">
-        <img src="img/horror.jpg" alt="PSX Dread: Retro Horror Props preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">3D</span><h3>PSX Dread: Retro Horror Props</h3><p>Low-poly retro horror props with a PS1-style look: clinic, haunted house, occult, basement, graveyard and more.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/farm.jpg" alt="Cozy Farming & Harvest preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Cozy Farming & Harvest</h3><p>201 farming icons: crops, seeds, tools, animals, artisan goods, flowers and farm props.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/food.jpg" alt="Cozy Food & Cooking preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Cozy Food & Cooking</h3><p>208 food icons: fruit, vegetables, ingredients, baked goods, dishes, desserts and drinks.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/fishing.jpg" alt="Cozy Fishing preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Cozy Fishing</h3><p>240+ fishing icons: fish, sea life, bait, rods, tackle and treasures.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/animals.jpg" alt="Cozy Animals preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Cozy Animals</h3><p>285 animal icons: farm, pets, forest, savanna, polar, ocean, birds, bugs, fantasy + face portraits.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/plants.jpg" alt="Cozy Plants & Flowers preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Cozy Plants & Flowers</h3><p>260 plant icons: flowers, trees, houseplants, succulents, seed packets and 4-stage growth sets.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/forage.jpg" alt="Forest Foraging preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Forest Foraging</h3><p>162 foraging icons: mushrooms, berries, herbs, flowers, nuts, leaves, critters and gear.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/home.jpg" alt="Cozy Home & Decor preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Cozy Home & Decor</h3><p>176 home icons: furniture, beds, storage, lights, plants, decor, kitchen, bath and garden.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/potion.jpg" alt="Alchemy & Potions preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Alchemy & Potions</h3><p>169 alchemy icons: potions in 10 colors and 5 shapes, elixirs, herbs, reagents and tools.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/rpg.jpg" alt="Fantasy Weapons & Armor preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Fantasy Weapons & Armor</h3><p>278 RPG icons in 12 tiers: swords, axes, bows, staffs, shields, armor and rings.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/monster.jpg" alt="Monster Drops & Loot preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Monster Drops & Loot</h3><p>164 loot icons: monster parts, slimes, eggs, trophies, chests, coins, keys and relics.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/craft.jpg" alt="Gems, Ores & Crafting preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Gems, Ores & Crafting</h3><p>199 crafting icons: ores, ingots, gems in 5 cuts, stone, wood, cloth, leather and essences.</p></div>
-      </article>
-      <article class="card" data-cat="Icons">
-        <img src="img/scifi.jpg" alt="Sci-Fi Survival preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Icons</span><h3>Sci-Fi Survival</h3><p>155 sci-fi icons: resources, tools, weapons, ammo, suit gear, tech, medical and cargo.</p></div>
-      </article>
-      <article class="card" data-cat="Free">
-        <img src="img/free_sampler.jpg" alt="Cozy Sampler (Free) preview" loading="lazy" width="630" height="500">
-        <div class="body"><span class="tag">Free</span><h3>Cozy Sampler (Free)</h3><p>80 free icons and UI pieces plus 6 sound effects, picked from 14 packs. Try the style before you buy.</p></div>
-      </article>
-</div></div></section>
-
-<section id="about"><div class="wrap about">
-<div><h2>About</h2>
-<p class="sub">Badgertainment is a small indie studio that makes ready-to-use assets for farming, life-sim, cozy RPG and casual games.</p>
-<p>Every pack sticks to one consistent cartoon style, so icons from different packs sit nicely together in the same inventory or shop screen. Packs come with clear file names, sprite sheets and data files, so you can drop them straight into your own item database.</p>
-<p><b>About AI use:</b> artwork and sounds are generated locally with open models (FLUX.2 Klein for images, Stable Audio for sounds). I then curate, clean up, resize, organize and quality-check everything by hand, and regenerate anything with defects. Every listing is marked as made with AI.</p></div>
-<div class="box"><h3>What you get in every icon pack</h3><ul>
-<li>Transparent PNGs in 512, 256, 128 and 64 px</li>
-<li>Silhouette versions for locked or undiscovered items</li>
-<li>Sprite sheets with JSON and CSV rects</li>
-<li>An items list with clear file prefixes</li>
-<li>Commercial use allowed in your games</li></ul></div>
+<a class="card" href="/packs/isofurniture/" data-cat="Environment" style="--acc:#f2a65a">
+<div class="cv"><img src="/img/covers/isofurniture.jpg" alt="Cozy Isometric Furniture cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Isometric Furniture</h3><p>251 isometric furniture pieces for 14 rooms, a building kit, 4 directions and 4 art styles. PNG sprites plus 3D models.</p><span class="tag environment">Environment</span></div></a>
+<a class="card" href="/packs/emotes/" data-cat="Characters" style="--acc:#f4b860">
+<div class="cv"><img src="/img/covers/emotes.jpg" alt="NPC Emote Bubbles cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>NPC Emote Bubbles</h3><p>450 animated emote bubbles for NPCs in 5 art styles: cozy, pixel, ink, flat and manga.</p><span class="tag characters">Characters</span></div></a>
+<a class="card" href="/packs/uikit/" data-cat="UI" style="--acc:#f0a868">
+<div class="cv"><img src="/img/covers/uikit.jpg" alt="Cozy UI Kit cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy UI Kit</h3><p>128 cozy UI pieces: buttons with 4 states, panels, frames, bars, toggles and 50 UI icons. 9-slice ready.</p><span class="tag ui">UI</span></div></a>
+<a class="card" href="/packs/sfx/" data-cat="Audio" style="--acc:#f2a15f">
+<div class="cv"><img src="/img/covers/sfx.jpg" alt="Cozy Game SFX cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Game SFX</h3><p>212 soft sound effects in 10 folders: UI, items, farming, animals, footsteps, magic, ambience loops and jingles.</p><span class="tag audio">Audio</span></div></a>
+<a class="card" href="/packs/cooking/" data-cat="Icons" style="--acc:#f39a5b">
+<div class="cv"><img src="/img/covers/cooking.jpg" alt="Cozy Cooking States Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Cooking States Icons</h3><p>90 ingredients in 4 states each: raw, chopped, cooked and burnt. Made for cooking and restaurant games.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/horror/" data-cat="3D" style="--acc:#d8473b">
+<div class="cv"><img src="/img/covers/horror.jpg" alt="PSX Dread: Retro Horror Props cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>PSX Dread: Retro Horror Props</h3><p>113 low-poly horror props with a PS1-era look: clinic, haunted house, occult, basement, graveyard and more.</p><span class="tag 3d">3D</span></div></a>
+<a class="card" href="/packs/farm/" data-cat="Icons" style="--acc:#9bd36a">
+<div class="cv"><img src="/img/covers/farm.jpg" alt="Cozy Farming &amp; Harvest Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Farming &amp; Harvest Icons</h3><p>201 farming icons: crops, seeds, tools, animals, artisan goods, flowers and farm props.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/food/" data-cat="Icons" style="--acc:#f3a35c">
+<div class="cv"><img src="/img/covers/food.jpg" alt="Cozy Food &amp; Cooking Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Food &amp; Cooking Icons</h3><p>208 food icons: fruit, vegetables, ingredients, baked goods, dishes, desserts and drinks.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/fishing/" data-cat="Icons" style="--acc:#6cc7e0">
+<div class="cv"><img src="/img/covers/fishing.jpg" alt="Cozy Fishing Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Fishing Icons</h3><p>246 fishing icons: 113 fish species, sea creatures, rods, bait, loot, food and props.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/animals/" data-cat="Icons" style="--acc:#f2b35e">
+<div class="cv"><img src="/img/covers/animals.jpg" alt="Cozy Animals Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Animals Icons</h3><p>285 animal icons: farm, pets, forest, savanna, polar, ocean, birds, bugs, fantasy and face portraits.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/plants/" data-cat="Icons" style="--acc:#ef8fb0">
+<div class="cv"><img src="/img/covers/plants.jpg" alt="Cozy Plants &amp; Flowers Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Plants &amp; Flowers Icons</h3><p>260 plant icons: flowers, trees, houseplants, succulents, seed packets and 4-stage growth sets.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/forage/" data-cat="Icons" style="--acc:#e3735a">
+<div class="cv"><img src="/img/covers/forage.jpg" alt="Forest Foraging Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Forest Foraging Icons</h3><p>162 foraging icons: mushrooms, berries, herbs, flowers, nuts, leaves, critters and gear.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/home/" data-cat="Icons" style="--acc:#f0ad6a">
+<div class="cv"><img src="/img/covers/home.jpg" alt="Cozy Home &amp; Decor Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Home &amp; Decor Icons</h3><p>176 home icons: furniture, beds, storage, lights, plants, decor, kitchen, bath and garden.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/potion/" data-cat="Icons" style="--acc:#b58cf0">
+<div class="cv"><img src="/img/covers/potion.jpg" alt="Alchemy &amp; Potions Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Alchemy &amp; Potions Icons</h3><p>169 alchemy icons: potions in 10 colors and 5 shapes, elixirs, herbs, reagents and tools.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/rpg/" data-cat="Icons" style="--acc:#f0c15a">
+<div class="cv"><img src="/img/covers/rpg.jpg" alt="Fantasy Weapons &amp; Armor Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Fantasy Weapons &amp; Armor Icons</h3><p>278 RPG icons in 12 tiers: swords, axes, bows, staffs, shields, armor, rings and amulets.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/monster/" data-cat="Icons" style="--acc:#8fd46a">
+<div class="cv"><img src="/img/covers/monster.jpg" alt="Monster Drops &amp; Loot Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Monster Drops &amp; Loot Icons</h3><p>164 loot icons: monster parts, slimes, eggs, trophies, chests, coins, keys and relics.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/craft/" data-cat="Icons" style="--acc:#6fc4f0">
+<div class="cv"><img src="/img/covers/craft.jpg" alt="Gems, Ores &amp; Crafting Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Gems, Ores &amp; Crafting Icons</h3><p>199 crafting icons: ores, ingots, gems in 5 cuts, stone, wood, cloth, leather and essences.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/scifi/" data-cat="Icons" style="--acc:#5fd0e8">
+<div class="cv"><img src="/img/covers/scifi.jpg" alt="Sci-Fi Survival Icons cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Sci-Fi Survival Icons</h3><p>155 sci-fi icons: resources, tools, weapons, ammo, suit gear, tech, medical and cargo.</p><span class="tag icons">Icons</span></div></a>
+<a class="card" href="/packs/free_sampler/" data-cat="Free" style="--acc:#f39a5b">
+<div class="cv"><img src="/img/covers/free_sampler.jpg" alt="Cozy Sampler (Free) cover" loading="lazy" width="630" height="500"></div>
+<div class="cb"><h3>Cozy Sampler (Free)</h3><p>80 free icons and UI pieces plus 6 sound effects, picked from 14 packs. Try the style before you buy.</p><span class="tag free">Free</span></div></a>
 </div></section>
 
-<div class="wrap"><section id="contact" class="contact">
-<h2>Contact & support</h2>
-<p>Found a problem with an asset, need a custom item, or have a question before buying?<br>Send a message and I will get back to you within 1 to 2 days.</p>
-<a class="btn" href="mailto:badgertainment@gmail.com">badgertainment@gmail.com</a>
-</section></div>
+<section id="about" class="about">
+<div><h2>About Badgertainment</h2>
+<p class="lead2">A small indie studio making ready-to-use assets for farming, life-sim, cozy RPG, casual and retro horror games.</p>
+<p>Every icon pack sticks to one consistent cartoon style, so icons from different packs sit nicely together in the same inventory or shop screen. Packs come with clear file names, sprite sheets and data files, so you can drop them straight into your own item database, in any engine.</p>
+<p><b>How the assets are made.</b> Icon artwork and sounds are generated locally with open models (FLUX.2 Klein for images, Stable Audio for sounds), then curated, cleaned up, resized, organized and quality-checked by hand. Anything with defects is regenerated. The isometric furniture and horror props are procedural 3D models built in Blender. Every listing says clearly how it was made.</p></div>
+<div class="box"><h3>In every icon pack</h3><ul>
+<li>Transparent PNG in 512, 256, 128 and 64 px</li>
+<li>Silhouettes for locked or undiscovered items</li>
+<li>Sprite sheets with JSON and CSV rects</li>
+<li>items.csv with clear file prefixes</li>
+<li>Commercial use, no attribution needed</li></ul></div>
+</section>
 
-<footer>© 2026 Badgertainment · Cozy game assets for indie developers</footer>
+<section id="contact" class="contact">
+<h2>Contact &amp; support</h2>
+<p>Found a problem with an asset, need a custom item, or have a question before buying?<br>Send a message and you will get an answer within 1 to 2 days.</p>
+<a class="btn big" href="mailto:badgertainment@gmail.com">badgertainment@gmail.com</a>
+</section>
+</main>
+<footer class="foot">
+<div><a class="brand" href="/"><img src="/img/logo.png" alt="" width="28" height="28"><span>Badgertainment</span></a></div>
+<p>Cozy game assets for indie developers · <a href="mailto:badgertainment@gmail.com">badgertainment@gmail.com</a></p>
+<p class="small">© 2026 Badgertainment. All trademarks belong to their respective owners.</p>
+</footer>
 <script>
 document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
 document.querySelectorAll('.filters button').forEach(x=>x.classList.toggle('on',x===b));
